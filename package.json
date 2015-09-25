@@ -1,0 +1,15 @@
+{
+  "name": "mdl-sass-mixins",
+  "version": "0.1.0",
+  "description": "Sass Rules Using the CSS from Material Design Lite as Mixins.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet but returning success for deploy\" && exit 0"
+  },
+  "keywords": [ ],
+  "author": "Mark Birbeck <mark.birbeck@gmail.com> (http://markbirbeck.com/)",
+  "license": "MIT",
+  "repository": "markbirbeck/mdl-sass-mixins",
+  "bugs": "https://github.com/markbirbeck/mdl-sass-mixins/issues",
+  "homepage": "https://github.com/markbirbeck/mdl-sass-mixins"
+}
