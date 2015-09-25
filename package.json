@@ -6,10 +6,13 @@
   "scripts": {
     "test": "echo \"No tests yet but returning success for deploy\" && exit 0"
   },
-  "keywords": [ ],
+  "keywords": [],
   "author": "Mark Birbeck <mark.birbeck@gmail.com> (http://markbirbeck.com/)",
   "license": "MIT",
   "repository": "markbirbeck/mdl-sass-mixins",
   "bugs": "https://github.com/markbirbeck/mdl-sass-mixins/issues",
-  "homepage": "https://github.com/markbirbeck/mdl-sass-mixins"
+  "homepage": "https://github.com/markbirbeck/mdl-sass-mixins",
+  "dependencies": {
+    "material-design-lite": "^1.0.4-2"
+  }
 }
