@@ -1,0 +1,10 @@
+/**
+ * See:
+ *
+ *  https://github.com/google/material-design-lite/tree/master/src/grid
+ */
+
+/* Fixes for IE 10 */
+.mdl-grid {
+  display: flex !important;
+}

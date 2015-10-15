@@ -1,0 +1,25 @@
+/**
+ * See:
+ *
+ *  https://github.com/google/material-design-lite/tree/master/src/layout
+ */
+
+body {
+  @extend .mdl-layout__container;
+
+  > main {
+    @extend .mdl-layout, .mdl-js-layout;
+
+    @extend .has-drawer, .is-upgraded;
+  }
+
+  > main {
+    @extend .mdl-layout__content;
+  }
+}
+
+.mdl-layout__content {
+  padding-top: 230px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}

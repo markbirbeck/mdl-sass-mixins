@@ -1,0 +1,89 @@
+article[typeof~=BlogPosting] {
+  .comments {
+    background-color: #EEE;
+  }
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+
+  .comments {
+    > form {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 16px;
+
+      .mdl-textfield {
+        flex-grow: 1;
+        margin-right: 16px;
+        color: rgb(97, 97, 97);
+      }
+      .mdl-textfield {
+        /* Workaround for Firefox.
+         * User agent stylesheet kept overwriting the font in FF only.
+         */
+        .mdl-textfield__input {
+          font-family: 'Roboto', 'Helvetica', sans-serif;
+        }
+        input,
+        textarea {
+          resize: none;
+        }
+      }
+      button {
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.24);
+        color: white;
+      }
+    }
+    .comment {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      > .comment__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 16px;
+
+        > .comment__avatar {
+          width: 48px;
+          height: 48px;
+          border-radius: 24px;
+          margin-right: 16px;
+        }
+        > .comment__author {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      > .comment__text {
+        line-height: 1.5em;
+      }
+      > .comment__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 0.8em;
+        margin-top: 16px;
+
+        button {
+          margin-right: 16px;
+          color: rgba(0, 0, 0, 0.24);
+        }
+      }
+      > .comment__answers {
+        padding-top: 32px;
+        padding-left: 48px;
+      }
+    }
+  }
+}

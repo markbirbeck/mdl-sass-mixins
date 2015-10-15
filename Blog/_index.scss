@@ -1,0 +1,130 @@
+/**
+ * Styles for a BlogPosting object, as defined by:
+ *
+ *  https://schema.org/BlogPosting
+ */
+
+@import "card";
+
+div[typeof~=Blog] {
+  max-width: 900px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+
+  @extend .mdl-grid;
+
+  > div {
+    @extend .mdl-card, .mdl-shadow--4dp;
+    @extend .mdl-cell, .mdl-cell--12-col;
+
+    > div {
+      > h3 {
+        @extend .mdl-card__media, .mdl-color-text--grey-50;
+      }
+
+      /**
+       * The main content:
+       */
+
+      > div {
+        @extend .mdl-color-text--grey-600;
+        @extend .mdl-card__supporting-text;
+      }
+    }
+  }
+
+  header {
+    .meta > * {
+      align-items: center;
+    }
+
+    + div {
+      border: 0;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        max-width: 512px;
+        margin: 16px auto;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  > nav {
+    @extend .mdl-color-text--grey-50;
+    @extend .mdl-cell, .mdl-cell--12-col;
+
+    margin: 12px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+
+    > .demo-back {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      color: white;
+      z-index: 9999;
+
+      a {
+        @extend .mdl-button, .mdl-js-button;
+        @extend .mdl-js-ripple-effect;
+        @extend .mdl-button--icon;
+      }
+    }
+
+    > a {
+      @extend .demo-nav__button;
+
+      color: white;
+      text-decoration: none;
+
+      > button {
+        @extend .mdl-button, .mdl-js-button, .mdl-button--icon;
+        @extend .mdl-js-ripple-effect;
+        @extend .mdl-color--white, .mdl-color-text--grey-900;
+      }
+
+      > .demo-nav__button {
+        &:first-child .mdl-button {
+          margin-right: 16px;
+        }
+        &:last-child .mdl-button {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .mdl-button {
+      color: rgba(0,0,0,0.54);
+      background-color: white;
+    }
+  }
+
+  .custom-header {
+    background-color: transparent;
+  }
+
+  .section-spacer {
+    flex-grow: 1;
+  }
+
+  .minilogo {
+    width: 44px;
+    height: 44px;
+    background-image: url('../images/avatar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 22px;
+    background-color: #F5F5F5;
+  }
+}

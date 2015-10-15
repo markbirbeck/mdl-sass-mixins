@@ -1,0 +1,70 @@
+@import "node_modules/material-design-lite/material";
+@import "footer";
+@import "grid";
+@import "layout";
+
+/**
+ * Types, based on linked-data-partials:
+ */
+
+@import "Blog/index";
+@import "BlogPosting/index";
+
+$backgroundImage: url('../images/google-material-design-wallpaper-20.jpg') !default;
+
+body::before {
+  background-image: $backgroundImage;
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+header .meta {
+  @extend .mdl-color-text--grey-700;
+  @extend .mdl-card__supporting-text;
+
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+
+  > .meta__favorites {
+    flex-direction: row;
+    margin: 0 8px;
+    font-size: 13px;
+    font-weight: 500;
+
+    .material-icons {
+      font-size: 2em;
+      cursor: pointer;
+      margin-left: 12px;
+    }
+  }
+
+  > *:first-child {
+    margin-right: 16px;
+  }
+
+  > * {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mdl-card header .meta.meta--fill {
+  justify-content: space-between;
+}
