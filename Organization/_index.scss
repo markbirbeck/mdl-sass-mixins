@@ -1,0 +1,61 @@
+/**
+ * Styles for a Organization object, as defined by:
+ *
+ *  https://schema.org/Organization
+ */
+
+div[typeof~=Organization] {
+
+  /**
+   * This is a card:
+   */
+
+  @extend .mdl-card;
+
+  /**
+   * Define the title wrapper:
+   */
+
+  > header {
+    @extend .mdl-card__title;
+
+    /**
+     * Define the title text container:
+     */
+
+    > h3 {
+      @extend .mdl-card__title-text;
+    }
+  }
+
+  /**
+   * Define the supporting content container:
+   */
+
+  > div {
+    @extend .mdl-card__supporting-text;
+  }
+
+  /**
+   * Define the container for actions:
+   */
+
+  > footer {
+    @extend .mdl-card__actions;
+    @extend .mdl-mini-footer;
+    background-color: inherit;
+
+    > nav {
+      :first-child {
+        @extend .mdl-mini-footer__left-section;
+      }
+      :last-child {
+        @extend .mdl-mini-footer__right-section;
+      }
+      > button {
+        @extend .mdl-button, mdl-button--colored;
+        @extend .mdl-js-button, .mdl-js-ripple-effect;
+      }
+    }
+  }
+}
