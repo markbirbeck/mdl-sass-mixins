@@ -1,6 +1,6 @@
 {
   "name": "mdl-sass-mixins",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Sass Rules Using the CSS from Material Design Lite as Mixins.",
   "main": "index.js",
   "scripts": {
