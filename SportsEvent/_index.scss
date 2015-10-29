@@ -46,10 +46,10 @@ main > div[typeof~=SportsEvent] {
     background-color: inherit;
 
     > nav {
-      :first-child {
+      &:first-child {
         @extend .mdl-mini-footer__left-section;
       }
-      :last-child {
+      &:last-child {
         @extend .mdl-mini-footer__right-section;
       }
       > button {
