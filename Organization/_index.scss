@@ -52,9 +52,13 @@ div[typeof~=Organization] {
       &:last-child {
         @extend .mdl-mini-footer__right-section;
       }
-      > button {
+      > button, > a {
         @extend .mdl-button, mdl-button--colored;
         @extend .mdl-js-button, .mdl-js-ripple-effect;
+
+        > img {
+          height: 100%;
+        }
       }
     }
   }
