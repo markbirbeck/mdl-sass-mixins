@@ -13,6 +13,6 @@
   "bugs": "https://github.com/markbirbeck/mdl-sass-mixins/issues",
   "homepage": "https://github.com/markbirbeck/mdl-sass-mixins",
   "dependencies": {
-    "material-design-lite": "^1.0.4-2"
+    "material-design-lite": "^1.1.3"
   }
 }
