@@ -12,9 +12,9 @@ To make the styles from MDL available to this project we import MDL's `material.
 
 To get a copy of `material.css` it's actually better to grab the whole MDL project from NPM so we've added `material-design-lite` as a module.
 
-By having a clear dependency on MDL, and can do things like pin our own stylesheet to a particular version of MDL.
+By having a clear dependency on MDL (rather than manually importing a single file from the module) we can do things like pin our own stylesheet to a particular version of MDL.
 
-To make use of the styles we siimply use an `@import` statement to include the stylesheet into our own stylesheet:
+To make use of the styles we simply use an `@import` statement to include the stylesheet into our own stylesheet:
 
 ```css
 @import "node_modules/material-design-lite/material";
