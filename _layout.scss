@@ -14,7 +14,7 @@ body {
     @extend .has-drawer, .is-upgraded;
   }
 
-  > main {
+  > main.blog {
     @extend .mdl-layout__content;
   }
 }
