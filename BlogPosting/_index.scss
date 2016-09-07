@@ -83,8 +83,9 @@ article[typeof~=BlogPosting] {
       z-index: 9999;
 
       a {
-        @extend .mdl-button, .mdl-js-button;
-        @extend .mdl-js-ripple-effect;
+        @extend .mdl-button;
+        @extend .mdl-js-button !optional;
+        @extend .mdl-js-ripple-effect !optional;
         @extend .mdl-button--icon;
       }
     }
@@ -96,8 +97,10 @@ article[typeof~=BlogPosting] {
       text-decoration: none;
 
       > button {
-        @extend .mdl-button, .mdl-js-button, .mdl-button--icon;
-        @extend .mdl-js-ripple-effect;
+        @extend .mdl-button;
+        @extend .mdl-button--icon;
+        @extend .mdl-js-button !optional;
+        @extend .mdl-js-ripple-effect !optional;
         @extend .mdl-color--white, .mdl-color-text--grey-900;
       }
 

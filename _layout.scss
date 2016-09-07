@@ -8,7 +8,8 @@ body {
   @extend .mdl-layout__container;
 
   > main {
-    @extend .mdl-layout, .mdl-js-layout;
+    @extend .mdl-layout;
+    @extend .mdl-js-layout !optional;
 
     @extend .has-drawer, .is-upgraded;
   }

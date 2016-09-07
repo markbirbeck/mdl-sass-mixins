@@ -54,7 +54,8 @@ div[typeof~=Organization] {
       }
       > button, > a {
         @extend .mdl-button, .mdl-button--colored;
-        @extend .mdl-js-button, .mdl-js-ripple-effect;
+        @extend .mdl-js-button !optional;
+        @extend .mdl-js-ripple-effect !optional;
 
         > img {
           height: 100%;
