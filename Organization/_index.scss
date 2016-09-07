@@ -53,7 +53,7 @@ div[typeof~=Organization] {
         @extend .mdl-mini-footer__right-section;
       }
       > button, > a {
-        @extend .mdl-button, mdl-button--colored;
+        @extend .mdl-button, .mdl-button--colored;
         @extend .mdl-js-button, .mdl-js-ripple-effect;
 
         > img {
