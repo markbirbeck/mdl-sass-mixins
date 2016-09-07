@@ -4,8 +4,15 @@
  *  https://github.com/google/material-design-lite/tree/master/src/footer
  */
 
-footer {
+main > footer {
   @extend .mdl-mini-footer;
+
+  margin-top: 80px;
+  height: 120px;
+  padding: 40px;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
 
   nav:first-child {
     @extend .mdl-mini-footer--left-section;
@@ -43,13 +50,4 @@ footer {
 .social-btn__share {
   color: rgba(0, 0, 0, 0.54);
   background: transparent;
-}
-
-.mdl-mini-footer {
-  margin-top: 80px;
-  height: 120px;
-  padding: 40px;
-  align-items: center;
-  background-color: white;
-  box-sizing: border-box;
 }
